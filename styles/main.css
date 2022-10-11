@@ -21,4 +21,98 @@ ol, ul {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  width: 100vw;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 14.95vw;
+  background: linear-gradient(180deg, #33383D 0%, #1C1D20 100%);
+  color: #E0E0E0;
+}
+.login .warning {
+  margin-bottom: 12.5vh;
+}
+.login .warning__title {
+  font-size: 3.75rem;
+  line-height: 4.75rem;
+  margin-bottom: 1rem;
+}
+.login .warning__text {
+  line-height: 1.27rem;
+  width: 15.68vw;
+}
+.login .authentication__password input, .login .authentication__username input {
+  width: 89%;
+  border: 1px solid #FFFFFF;
+  background-color: transparent;
+  margin-right: 1.125rem;
+  padding: 20px;
+  border-radius: 50px;
+  font-family: "Poppins", sans-serif;
+  color: #E0E0E0;
+}
+.login .authentication__password input::-moz-placeholder, .login .authentication__username input::-moz-placeholder {
+  color: #E0E0E0;
+}
+.login .authentication__password input:-ms-input-placeholder, .login .authentication__username input:-ms-input-placeholder {
+  color: #E0E0E0;
+}
+.login .authentication__password input::placeholder, .login .authentication__username input::placeholder {
+  color: #E0E0E0;
+}
+@media screen and (max-width: 1770px) {
+  .login .authentication__password input, .login .authentication__username input {
+    width: 80%;
+  }
+}
+.login .authentication {
+  width: 21.72vw;
+}
+.login .authentication__title {
+  font-size: 1.875rem;
+  line-height: 2.38rem;
+  margin-bottom: 2rem;
+}
+.login .authentication__username input {
+  margin-bottom: 2rem;
+}
+.login .authentication__password input {
+  margin-bottom: 10.65vh;
+}
+.login .authentication__button {
+  width: 89%;
+  padding: 22px 0px;
+  border-radius: 50px;
+  border: none;
+  filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.5));
+  background: linear-gradient(90deg, #FF2D04 0%, #C13216 100%);
+  color: #FFFFFF;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+@media screen and (max-width: 1770px) {
+  .login .authentication__button {
+    width: 80%;
+  }
+}
+
+.login-image {
+  margin: 0;
+  height: 100vh;
+  contain: content;
+}
+.login-image img {
+  width: 100%;
+  height: 115%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=main.css.map */
