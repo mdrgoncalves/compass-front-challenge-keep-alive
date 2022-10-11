@@ -1,0 +1,47 @@
+//Colors
+
+$color-login-text: #E0E0E0;
+$color-primary: #FFFFFF;
+
+$color-button-bg: #FF2D04; 
+$shadow-button: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.5));
+
+$color-login-bg: linear-gradient(180deg, #33383D 0%, #1C1D20 100%);
+$shadow-login-bg: 4px 4px 70px rgba(0, 0, 0, 0.25);
+
+$color-error: #E9B425;
+
+$color-home-primary: #222222;
+$color-home-orange: #C12D18;
+$color-home-footer: linear-gradient(90.16deg, #33383D 0%, #1C1D20 100%);
+
+//Fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+$font-family: 'Poppins', sans-serif;
+
+//Reset CSS
+
+html {
+    box-sizing: border-box;
+    font-family: $font-family;
+}
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
