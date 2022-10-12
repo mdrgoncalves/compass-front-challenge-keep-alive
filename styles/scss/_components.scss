@@ -1,3 +1,5 @@
+//Login Page
+
 .login {
     display: flex;
     flex-direction: column;
@@ -97,7 +99,6 @@
 }
 
 .login-image {
-    margin: 0;
     height: 100vh;
     contain: content;
 
@@ -105,5 +106,144 @@
         width: 100%;
         height: 115%;
         object-fit: cover;
+    }
+}
+
+//Home Page
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5625rem 2.5rem;
+
+    &__timekeeper {
+        text-align: center;
+    }
+
+    &__time {
+        font-size: 9rem;
+        font-weight: 700;
+        line-height: 1;
+    }
+
+    &__datetime {
+        font-size: 0.875rem;
+    }
+
+    &_address {
+        font-size: 0.875rem;
+    }
+
+    &__weather {
+        text-align: center;
+    }
+
+    &__icon {
+        display: inline-block;
+        background: url(../../image/weather-icon.svg);
+        background-repeat: no-repeat;
+        height: 34px;
+        width: 34px;
+        margin-right: 1rem;
+    }
+
+    &__weather--value {
+        display: inline;
+        font-size: 3rem;
+        font-weight: 700;
+    }
+}
+
+.home-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+.missions {
+    text-align: right;
+
+    &__header {
+        font-size: 2.25rem;
+        font-weight: 700;
+        color: $color-home-orange;
+    }
+
+    &__translate {
+        font-size: 1.5rem;
+
+    }
+
+    &__text {
+        @extend .missions__header;
+        font-size: 4rem;
+    }
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    background: $color-home-footer;
+    color: $color-primary;
+
+    &__text {
+        font-size: 0.75rem;
+        text-align: right;
+        width: 28.17vw;
+        margin: 2rem 0 1.2rem 18.44vw;
+        padding-right: 2.1875rem;
+        border-right: 1px solid $color-primary;
+    }
+
+    .counter {
+        display: flex;
+        align-items: center;
+
+        &__text {
+            font-size: 0.875rem;
+            text-align: right;
+            width: 5.68vw;
+            margin: 0 2rem 0 6.4vw;
+        }
+
+        &__timer {
+            text-align: center;
+            line-height: 1;
+        }
+
+        &__meter {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        &__seconds {
+            font-size: 0.875rem;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        height: 100%;
+        width: auto;
+    }
+
+    &__button--continue {
+        height: 100%;
+        width: 130px;
+        background-color: $color-primary;
+        border: none;
+        color: $color-home-orange;
+        font-size: 0.75rem;
+        cursor: pointer;
+    }
+
+    &__button--logout {
+        @extend .footer__button--continue;
+        background-color: transparent;
+        color: $color-primary;
+        font-weight: 700;
     }
 }
