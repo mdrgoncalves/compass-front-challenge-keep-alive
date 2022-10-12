@@ -63,3 +63,11 @@ img {
         transform: translateX(-60px);
     }
 }
+
+//Mixins and Placeholders
+
+%center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

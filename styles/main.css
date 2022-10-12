@@ -23,6 +23,34 @@ img {
   height: auto;
 }
 
+.slide-left {
+  -webkit-animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-60px);
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-60px);
+  }
+}
+.login .authentication__password, .login .authentication__username {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -82,10 +110,10 @@ img {
   line-height: 2.38rem;
   margin-bottom: 2rem;
 }
-.login .authentication__username input {
+.login .authentication__username {
   margin-bottom: 2rem;
 }
-.login .authentication__password input {
+.login .authentication__password {
   margin-bottom: 10.65vh;
 }
 .login .authentication__button {
