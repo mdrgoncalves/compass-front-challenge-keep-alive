@@ -23,28 +23,6 @@ img {
   height: auto;
 }
 
-.slide-left {
-  -webkit-animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-
-@-webkit-keyframes slide-left {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-60px);
-  }
-}
-
-@keyframes slide-left {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-60px);
-  }
-}
 .login .authentication__password, .login .authentication__username {
   display: flex;
   align-items: center;
@@ -78,7 +56,7 @@ img {
   line-height: 1.27rem;
   width: 15.68vw;
 }
-.login .authentication__password input, .login .authentication__username input {
+.login .authentication__password .password__input, .login .authentication__username .username__input {
   width: 89%;
   border: 1px solid #FFFFFF;
   background-color: transparent;
@@ -88,17 +66,17 @@ img {
   font-family: "Poppins", sans-serif;
   color: #E0E0E0;
 }
-.login .authentication__password input::-moz-placeholder, .login .authentication__username input::-moz-placeholder {
+.login .authentication__password .password__input::-moz-placeholder, .login .authentication__username .username__input::-moz-placeholder {
   color: #E0E0E0;
 }
-.login .authentication__password input:-ms-input-placeholder, .login .authentication__username input:-ms-input-placeholder {
+.login .authentication__password .password__input:-ms-input-placeholder, .login .authentication__username .username__input:-ms-input-placeholder {
   color: #E0E0E0;
 }
-.login .authentication__password input::placeholder, .login .authentication__username input::placeholder {
+.login .authentication__password .password__input::placeholder, .login .authentication__username .username__input::placeholder {
   color: #E0E0E0;
 }
 @media screen and (max-width: 1770px) {
-  .login .authentication__password input, .login .authentication__username input {
+  .login .authentication__password .password__input, .login .authentication__username .username__input {
     width: 80%;
   }
 }
@@ -115,6 +93,16 @@ img {
 }
 .login .authentication__password {
   margin-bottom: 10.65vh;
+}
+.login .authentication__error {
+  color: #E9B425;
+  font-weight: 700;
+  line-height: 1.25rem;
+  text-align: center;
+  width: 14.74vw;
+  margin: 0 auto;
+  margin-bottom: 2.93rem;
+  margin-left: 2.37rem;
 }
 .login .authentication__button {
   width: 89%;
@@ -143,4 +131,38 @@ img {
   height: 115%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.slide-left {
+  -webkit-animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-60px);
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-60px);
+  }
+}
+.error {
+  border: 1px solid #E9B425 !important;
+}
+
+.margin-error {
+  margin-bottom: 2rem !important;
+}
+
+.invisible {
+  display: none;
 }/*# sourceMappingURL=main.css.map */
