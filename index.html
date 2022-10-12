@@ -24,13 +24,14 @@
                 <h1 class="authentication__title">Login</h1>
                 <form>
                     <div class="authentication__username">
-                        <input type="text" name="username" id="username" placeholder="Usuário">
+                        <input type="text" name="username" id="username" placeholder="Usuário" class="username__input">
                         <img src="./image/icon-user.svg" alt="User icon" class="username__icon">
                     </div>
                     <div class="authentication__password">
-                        <input type="password" name="password" id="password" placeholder="Senha">
+                        <input type="password" name="password" id="password" placeholder="Senha" class="password__input">
                         <img src="./image/icon-password.svg" alt="Password icon" class="password__icon">
                     </div>
+                    <div class="authentication__error invisible">Ops, usuário ou senha inválidos. Tente novamente!</div>
                     <input type="submit" value="Continuar" class="authentication__button">
                 </form>
             </section>
@@ -44,6 +45,7 @@
     </main>
 
     <script type="module" src="./javascript/iconAnimation.js"></script>
+    <script type="module" src="./javascript/formValidation.js"></script>
 
 </body>
 </html>
