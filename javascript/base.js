@@ -4,4 +4,5 @@ export const elements = {
     password: document.querySelector('#password'),
     passwordIcon: document.querySelector('.password__icon'),
     submit: document.querySelector('.authentication__button'),
+    errorMessage: document.querySelector('.authentication__error')
 }
