@@ -239,7 +239,20 @@ figure {
   height: 100%;
   width: auto;
 }
-.footer__button--continue, .footer__button--logout {
+.footer__button--continue {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  width: 130px;
+  background-color: #FFFFFF;
+  color: #C12D18;
+  font-size: 0.75rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+.footer__button--logout {
   height: 100%;
   width: 130px;
   background-color: #FFFFFF;
@@ -247,8 +260,6 @@ figure {
   color: #C12D18;
   font-size: 0.75rem;
   cursor: pointer;
-}
-.footer__button--logout {
   background-color: transparent;
   color: #FFFFFF;
   font-weight: 700;
