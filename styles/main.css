@@ -118,6 +118,7 @@ figure {
   color: #FFFFFF;
   font-size: 1.125rem;
   font-weight: 700;
+  cursor: pointer;
 }
 @media screen and (max-width: 1770px) {
   .login .authentication__button {
