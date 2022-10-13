@@ -152,6 +152,11 @@ figure {
 .header__datetime {
   font-size: 0.875rem;
 }
+.header__localization {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .header_address {
   font-size: 0.875rem;
 }
