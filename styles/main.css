@@ -39,6 +39,12 @@ figure {
   height: 100vh;
   width: 100vw;
 }
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+  }
+}
 
 .login {
   display: flex;
@@ -120,9 +126,31 @@ figure {
   font-weight: 700;
   cursor: pointer;
 }
-@media screen and (max-width: 1770px) {
-  .login .authentication__button {
+@media screen and (max-width: 1360px) {
+  .login {
+    align-items: center;
+    padding: 0;
+  }
+  .login .warning {
+    margin: 0 2rem 12.5vh 2rem;
+  }
+  .login .warning__text {
+    width: 100%;
+  }
+  .login .authentication__username .username__input, .login .authentication__password .password__input {
+    width: 100%;
+  }
+  .login .authentication {
     width: 80%;
+  }
+  .login .authentication__error {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 2.93rem;
+  }
+  .login .authentication__button {
+    width: 100%;
+    margin-bottom: 0.8rem;
   }
 }
 
@@ -135,6 +163,17 @@ figure {
   height: 115%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  .login-image {
+    order: -1;
+    height: 15vmin;
+  }
+  .login-image img {
+    width: 100%;
+    -o-object-position: top;
+       object-position: top;
+  }
 }
 
 .home-container {
