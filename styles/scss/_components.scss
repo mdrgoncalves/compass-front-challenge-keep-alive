@@ -165,8 +165,6 @@
     grid-template-columns: 1fr 1fr;
 }
 
-
-
 .missions {
     text-align: right;
 
@@ -237,6 +235,20 @@
     }
 
     &__button--continue {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100%;
+        width: 130px;
+        background-color: $color-primary;
+        color: $color-home-orange;
+        font-size: 0.75rem;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    &__button--logout {
         height: 100%;
         width: 130px;
         background-color: $color-primary;
@@ -244,10 +256,6 @@
         color: $color-home-orange;
         font-size: 0.75rem;
         cursor: pointer;
-    }
-
-    &__button--logout {
-        @extend .footer__button--continue;
         background-color: transparent;
         color: $color-primary;
         font-weight: 700;
