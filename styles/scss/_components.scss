@@ -204,20 +204,50 @@
         font-size: 3rem;
         font-weight: 700;
     }
+
+    @media screen and (max-width: 1085px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 1.5rem;
+        padding-bottom: 0;
+
+        &__time {
+            font-size: 7rem;
+        }
+    
+        &__datetime {
+            font-size: 1.5rem;
+        }
+    
+        &__address {
+            margin-top: 1.5rem;
+            font-size: 1.5rem;
+        }
+    }
 }
 
 .home-content {
     display: grid;
     grid-template-columns: 0.6fr 1fr;
+
+    @media screen and (max-width: 1085px) {
+        grid-template-columns: 1fr;
+    }
 }
 
 .big-compass {
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: flex-end;
 
     & img {
-        width: 26vmax;
+        width: 25vmax;
+    }
+
+    @media screen and (max-width: 1085px) {
+        display: none;
     }
 }
 
@@ -240,6 +270,22 @@
     &__text {
         @extend .missions__header;
         font-size: 4rem;
+    }
+
+    @media screen and (max-width: 1815px) {
+        
+        &__text {
+            font-size: 2.8rem;
+        }
+    }
+
+    @media screen and (max-width: 1085px) {
+        text-align: center;
+        margin: 6vh 1rem 1.5rem 2rem;
+
+        &__header {
+            font-size: 2rem;
+        }
     }
 }
 
@@ -317,5 +363,50 @@
         background-color: transparent;
         color: $color-primary;
         font-weight: 700;
+    }
+
+    @media screen and (max-width: 1815px) {
+
+        &__text {
+            width: 28.17vw;
+        }
+    }
+
+    @media screen and (max-width: 1023px) {
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        padding: 0 1.5rem;
+
+        &__text {
+            font-size: 1rem;
+            text-align: justify;
+            width: 100%;
+            margin: 0;
+            padding: 1.5rem 0;
+            border-right: none;
+        }
+
+        .counter {
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 1.5rem;
+
+            &__text {
+                font-size: 1rem;
+                text-align: center;
+                width: 100%;
+                margin: 0 0 1rem 0;
+            }
+
+            &__seconds {
+                font-size: 1rem;
+            }
+        }
+
+        &__buttons {
+            height: 12vh;
+            margin: 1.5rem 0;
+        }
     }
 }
