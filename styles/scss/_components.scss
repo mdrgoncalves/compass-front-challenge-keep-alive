@@ -111,6 +111,13 @@
 
 //Home Page
 
+.home-container {
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -162,11 +169,23 @@
 
 .home-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.6fr 1fr;
+}
+
+.big-compass {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    & img {
+        width: 26vmax;
+    }
 }
 
 .missions {
     text-align: right;
+    margin-right: 6.98vw;
+    margin-top: 6vh;
 
     &__header {
         font-size: 2.25rem;

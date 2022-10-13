@@ -11,61 +11,63 @@
 </head>
 <body>
     
-    <header class="header">
+    <div class="home-container">
+        <header class="header">
 
-        <h1 class="header-logo">
-            <img src="../image/logo-compasso.svg" alt="Compass logo" class="header-logo__image">
-        </h1>
+            <h1 class="header-logo">
+                <img src="../image/logo-compasso.svg" alt="Compass logo" class="header-logo__image">
+            </h1>
 
-        <div class="header__timekeeper">
-            <time class="header__time">11:26</time>
-            <p class="header__datetime">terça-feira, 17 de março de 2020</p>
-        </div>
-
-        <div class="header__localization">
-            <h3 class="header__address">Passo Fundo - RS</h3>
-            <div class="header__weather">
-                <span class="header__icon"></span>
-                <p class="header__weather--value">22º</p>
+            <div class="header__timekeeper">
+                <time class="header__time">11:26</time>
+                <p class="header__datetime">terça-feira, 17 de março de 2020</p>
             </div>
-        </div>
 
-    </header>
-
-    <main class="home-content">
-
-        <figure class="big-compass">
-            <img src="../image/bola-compasso.png" alt="Big Compass logo" class="big-compass__image">
-        </figure>
-        <section class="missions">
-            <h2 class="missions__header">Our mission is</h2>
-            <p class="missions__translate">Nossa missão é</p>
-            <h3 class="missions__text">to transform the world</h3>
-            <p class="missions__translate">transformar o mundo</p>
-            <h3 class="missions__text">building digital experiences</h3>
-            <p class="missions__translate">construindo experiências digitais</p>
-            <h3 class="missions__text">that enable our client’s growth</h3>
-            <p class="missions__translate">que permitam o crescimento dos nossos clientes</p>
-        </section>
-
-    </main>
-
-    <footer class="footer">
-
-        <p class="footer__text">Essa janela do navegador é usada para manter sua sessão de autenticação ativa. Deixe-a aberta em segundo plano e abra uma nova janela para continuar a navegar.</p>
-        <div class="counter">
-            <p class="counter__text">Application refresh in</p>
-            <div class="counter__timer">
-                <p class="counter__meter">600</p>
-                <p class="counter__seconds">seconds</p>
+            <div class="header__localization">
+                <h3 class="header__address">Passo Fundo - RS</h3>
+                <div class="header__weather">
+                    <span class="header__icon"></span>
+                    <p class="header__weather--value">22º</p>
+                </div>
             </div>
-        </div>
-        <div class="footer__buttons">
-            <a href="https://noticias.uol.com.br/" target="_blank" class="footer__button--continue">Continuar </br>Navegando</a>
-            <button class="footer__button--logout">Logout</button>
-        </div>
 
-    </footer>
+        </header>
+
+        <main class="home-content">
+
+            <figure class="big-compass">
+                <img src="../image/bola-compasso.png" alt="Big Compass logo" class="big-compass__image">
+            </figure>
+            <section class="missions">
+                <h2 class="missions__header">Our mission is</h2>
+                <p class="missions__translate">Nossa missão é</p>
+                <h3 class="missions__text">to transform the world</h3>
+                <p class="missions__translate">transformar o mundo</p>
+                <h3 class="missions__text">building digital experiences</h3>
+                <p class="missions__translate">construindo experiências digitais</p>
+                <h3 class="missions__text">that enable our client’s growth</h3>
+                <p class="missions__translate">que permitam o crescimento dos nossos clientes</p>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+
+            <p class="footer__text">Essa janela do navegador é usada para manter sua sessão de autenticação ativa. Deixe-a aberta em segundo plano e abra uma nova janela para continuar a navegar.</p>
+            <div class="counter">
+                <p class="counter__text">Application refresh in</p>
+                <div class="counter__timer">
+                    <p class="counter__meter">600</p>
+                    <p class="counter__seconds">seconds</p>
+                </div>
+            </div>
+            <div class="footer__buttons">
+                <a href="https://noticias.uol.com.br/" target="_blank" class="footer__button--continue">Continuar </br>Navegando</a>
+                <button class="footer__button--logout">Logout</button>
+            </div>
+
+        </footer>
+    </div>
 
     <script type="module" src="../javascript/setTime.js"></script>
     <script type="module" src="../javascript/setLocalization.js"></script>
