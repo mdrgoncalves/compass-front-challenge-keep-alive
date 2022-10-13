@@ -1,14 +1,10 @@
-import { elements } from './baseHome.js';
-import { getLocalization } from './getLocalization.js'; 
+import { elements, key } from './baseHome.js';
 
-async function setWeather() {
+export function setWeather(city) {
 
-    const localization = await getLocalization();
-    const city = localization.city;
-
-    let urlWeather = `https://api.weatherapi.com/v1/current.json?key=${elements.key}&q=${city}&aqi=no`;
+    let urlWeather = `https://api.weatherapi.com/v1/current.json?key=${key}&q=${city}&aqi=no`;
     
-    await fetch(urlWeather).then((response) => response.json())
+    fetch(urlWeather).then((response) => response.json())
         .then((data) => {
             elements.temperature.textContent = `${Math.round(data.current.temp_c)}°C`;
             elements.weatherIcon.style.backgroundImage = `url(${data.current.condition.icon})`;
@@ -18,4 +14,3 @@ async function setWeather() {
         })
 }
 
-window.addEventListener("load", setWeather);
