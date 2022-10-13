@@ -6,3 +6,8 @@ export const elements = {
     submit: document.querySelector('.authentication__button'),
     errorMessage: document.querySelector('.authentication__error')
 }
+
+export const validatedUser = {
+    username: 'admin@compasso.com.br',
+    password: 'admin'
+}
