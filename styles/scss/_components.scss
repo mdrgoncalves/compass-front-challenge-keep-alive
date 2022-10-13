@@ -130,6 +130,12 @@
         font-size: 0.875rem;
     }
 
+    &__localization {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     &_address {
         font-size: 0.875rem;
     }
