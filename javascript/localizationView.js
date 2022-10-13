@@ -1,4 +1,5 @@
 import { elements } from './baseHome.js';
+import { setWeather } from './setWeather.js';
 
 export const setLocalization = async () => {
     
@@ -14,6 +15,7 @@ export const setLocalization = async () => {
                 const state = data.address['ISO3166-2-lvl4'].split('-').pop();
 
                 elements.address.textContent = `${city} - ${state}`;
+                setWeather(city);
             })
     }
 

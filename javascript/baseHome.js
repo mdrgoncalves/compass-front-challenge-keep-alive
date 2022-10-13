@@ -7,5 +7,6 @@ export const elements = {
     weatherIcon: document.querySelector('.header__icon'),
     temperature: document.querySelector('.header__weather--value'),
     logoutBtn: document.querySelector('.footer__button--logout'),
-    key: '81f11efbb45645f997f214749221210'
 }
+
+export const key = '81f11efbb45645f997f214749221210';
