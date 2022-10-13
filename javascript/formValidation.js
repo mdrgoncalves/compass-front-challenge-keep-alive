@@ -1,4 +1,5 @@
 import { elements } from './baseLogin.js';
+import { LocalStorage } from './LocalStorage.js';
 
 const validatedUser = {
     username: 'admin@compasso.com.br',
@@ -11,7 +12,8 @@ elements.submit.addEventListener('click', function(event) {
     
     if(elements.username.value === validatedUser.username 
         && elements.password.value === validatedUser.password) {
-            document.location = 'https://www.google.com/';
+            LocalStorage.save();
+            window.location = '../pages/home.html';
     } else {
         elements.username.classList.add('error');
         elements.password.classList.add('error');
