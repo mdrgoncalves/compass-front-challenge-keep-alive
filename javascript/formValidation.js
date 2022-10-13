@@ -1,10 +1,6 @@
 import { elements } from './baseLogin.js';
 import { LocalStorage } from './LocalStorage.js';
-
-const validatedUser = {
-    username: 'admin@compasso.com.br',
-    password: 'admin'
-}
+import { validatedUser } from './baseLogin.js';
 
 elements.submit.addEventListener('click', function(event) {
 
