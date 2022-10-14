@@ -23,25 +23,6 @@
         }
     }
 
-    %input {
-        width: 89%;
-        border: 1px solid $color-primary;
-        background-color: transparent;
-        margin-right: 1.125rem;
-        padding: 20px;
-        border-radius: 50px;
-        font-family: $font-family;
-        color: $color-login-text;
-        
-        &::placeholder {
-            color: $color-login-text;
-        }
-
-        @media screen and (max-width: 1770px) {
-            width: 80%;
-        }
-    }
-
     .authentication {
         width: 21.72vw;
 
@@ -49,6 +30,25 @@
             font-size: 1.875rem;
             line-height: 2.38rem;
             margin-bottom: 2rem;
+        }
+
+        %input {
+            width: 89%;
+            border: 1px solid $color-primary;
+            background-color: transparent;
+            margin-right: 1.125rem;
+            padding: 20px;
+            border-radius: 50px;
+            font-family: $font-family;
+            color: $color-login-text;
+            
+            &::placeholder {
+                color: $color-login-text;
+            }
+    
+            @media screen and (max-width: 1770px) {
+                width: 80%;
+            }
         }
 
         &__username {
@@ -155,6 +155,7 @@
     margin: 0;
     display: grid;
     grid-template-rows: auto 1fr auto;
+    overflow-x: hidden;
 }
 
 .header {
@@ -167,7 +168,7 @@
     }
 
     &__time {
-        font-size: 9rem;
+        font-size: 8rem;
         font-weight: 700;
         line-height: 1;
     }
@@ -195,8 +196,8 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
-        height: 34px;
-        width: 40px;
+        height: 45px;
+        width: 50px;
         margin-right: 1rem;
     }
 
@@ -211,7 +212,7 @@
         justify-content: center;
         align-items: center;
         margin: 0;
-        padding: 1.5rem;
+        padding: 1.5rem 0;
         padding-bottom: 0;
 
         &__time {
@@ -244,7 +245,7 @@
     justify-content: flex-end;
 
     & img {
-        width: 25vmax;
+        width: max(25vmax, 52vmin);
     }
 
     @media screen and (max-width: 1085px) {
@@ -255,7 +256,7 @@
 .missions {
     text-align: right;
     margin-right: 6.98vw;
-    margin-top: 6vh;
+    margin-top: 8vh;
 
     &__header {
         font-size: 2.25rem;
@@ -265,12 +266,13 @@
 
     &__translate {
         font-size: 1.5rem;
-
+        line-height: 0.6rem;
+        margin-bottom: 0.8rem;
     }
 
     &__text {
         @extend .missions__header;
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 
     @media screen and (max-width: 1815px) {
@@ -282,10 +284,16 @@
 
     @media screen and (max-width: 1085px) {
         text-align: center;
-        margin: 6vh 1rem 1.5rem 2rem;
+        margin: 6vh 1rem 2rem 2rem;
 
         &__header {
             font-size: 2rem;
+        }
+
+        &__translate {
+            font-size: 1.5rem;
+            line-height: 125%;
+            margin-bottom: 0;
         }
     }
 }

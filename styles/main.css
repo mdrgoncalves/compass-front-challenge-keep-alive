@@ -77,7 +77,15 @@ body {
   line-height: 1.27rem;
   width: 15.68vw;
 }
-.login .authentication__password .password__input, .login .authentication__username .username__input {
+.login .authentication {
+  width: 21.72vw;
+}
+.login .authentication__title {
+  font-size: 1.875rem;
+  line-height: 2.38rem;
+  margin-bottom: 2rem;
+}
+.login .authentication .authentication__password .password__input, .login .authentication__password .authentication .password__input, .login .authentication .authentication__username .username__input, .login .authentication__username .authentication .username__input {
   width: 89%;
   border: 1px solid #FFFFFF;
   background-color: transparent;
@@ -87,27 +95,19 @@ body {
   font-family: "Poppins", sans-serif;
   color: #E0E0E0;
 }
-.login .authentication__password .password__input::-moz-placeholder, .login .authentication__username .username__input::-moz-placeholder {
+.login .authentication .authentication__password .password__input::-moz-placeholder, .login .authentication__password .authentication .password__input::-moz-placeholder, .login .authentication .authentication__username .username__input::-moz-placeholder, .login .authentication__username .authentication .username__input::-moz-placeholder {
   color: #E0E0E0;
 }
-.login .authentication__password .password__input:-ms-input-placeholder, .login .authentication__username .username__input:-ms-input-placeholder {
+.login .authentication .authentication__password .password__input:-ms-input-placeholder, .login .authentication__password .authentication .password__input:-ms-input-placeholder, .login .authentication .authentication__username .username__input:-ms-input-placeholder, .login .authentication__username .authentication .username__input:-ms-input-placeholder {
   color: #E0E0E0;
 }
-.login .authentication__password .password__input::placeholder, .login .authentication__username .username__input::placeholder {
+.login .authentication .authentication__password .password__input::placeholder, .login .authentication__password .authentication .password__input::placeholder, .login .authentication .authentication__username .username__input::placeholder, .login .authentication__username .authentication .username__input::placeholder {
   color: #E0E0E0;
 }
 @media screen and (max-width: 1770px) {
-  .login .authentication__password .password__input, .login .authentication__username .username__input {
+  .login .authentication .authentication__password .password__input, .login .authentication__password .authentication .password__input, .login .authentication .authentication__username .username__input, .login .authentication__username .authentication .username__input {
     width: 80%;
   }
-}
-.login .authentication {
-  width: 21.72vw;
-}
-.login .authentication__title {
-  font-size: 1.875rem;
-  line-height: 2.38rem;
-  margin-bottom: 2rem;
 }
 .login .authentication__username {
   margin-bottom: 2rem;
@@ -192,6 +192,7 @@ body {
   margin: 0;
   display: grid;
   grid-template-rows: auto 1fr auto;
+  overflow-x: hidden;
 }
 
 .header {
@@ -203,7 +204,7 @@ body {
   text-align: center;
 }
 .header__time {
-  font-size: 9rem;
+  font-size: 8rem;
   font-weight: 700;
   line-height: 1;
 }
@@ -226,8 +227,8 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  height: 34px;
-  width: 40px;
+  height: 45px;
+  width: 50px;
   margin-right: 1rem;
 }
 .header__weather--value {
@@ -241,7 +242,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0;
-    padding: 1.5rem;
+    padding: 1.5rem 0;
     padding-bottom: 0;
   }
   .header__time {
@@ -272,7 +273,7 @@ body {
   justify-content: flex-end;
 }
 .big-compass img {
-  width: 25vmax;
+  width: max(25vmax, 52vmin);
 }
 @media screen and (max-width: 1085px) {
   .big-compass {
@@ -283,7 +284,7 @@ body {
 .missions {
   text-align: right;
   margin-right: 6.98vw;
-  margin-top: 6vh;
+  margin-top: 8vh;
 }
 .missions__header, .missions__text {
   font-size: 2.25rem;
@@ -292,9 +293,11 @@ body {
 }
 .missions__translate {
   font-size: 1.5rem;
+  line-height: 0.6rem;
+  margin-bottom: 0.8rem;
 }
 .missions__text {
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 @media screen and (max-width: 1815px) {
   .missions__text {
@@ -304,10 +307,15 @@ body {
 @media screen and (max-width: 1085px) {
   .missions {
     text-align: center;
-    margin: 6vh 1rem 1.5rem 2rem;
+    margin: 6vh 1rem 2rem 2rem;
   }
   .missions__header, .missions__text {
     font-size: 2rem;
+  }
+  .missions__translate {
+    font-size: 1.5rem;
+    line-height: 125%;
+    margin-bottom: 0;
   }
 }
 
