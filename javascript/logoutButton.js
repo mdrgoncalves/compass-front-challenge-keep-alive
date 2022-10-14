@@ -1,6 +1,13 @@
 import { elements } from './baseHome.js';
+import { LocalStorage } from './localStorage.js';
 
 elements.logoutBtn.addEventListener('click', () => {
 
-    window.location = '../index.html';
+    if(confirm('Deseja realmente sair?')) {
+        LocalStorage.clear();
+        window.location = '../index.html';
+    } else {
+        return;
+    }
+    
 });
