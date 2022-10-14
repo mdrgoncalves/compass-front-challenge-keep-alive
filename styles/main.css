@@ -33,6 +33,10 @@ figure {
   justify-content: center;
 }
 
+.background-size-js {
+  background-size: auto !important;
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -214,8 +218,9 @@ figure {
   display: inline-block;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
   height: 34px;
-  width: 34px;
+  width: 40px;
   margin-right: 1rem;
 }
 .header__weather--value {
