@@ -1,4 +1,5 @@
 import { elements } from './baseHome.js';
+import { LocalStorage } from './LocalStorage.js';
 
 function countdown() {
 
@@ -9,8 +10,13 @@ function countdown() {
         startTimer--;
         elements.counter.textContent = startTimer;
 
-        if(startTimer === 0) {
-            window.location = '../index.html';
+        if(startTimer <= 0) {
+            if(confirm('Deseja continuar logado?')) {
+                location.reload();
+            } else {
+                LocalStorage.clear();
+                window.location = '../index.html';
+            }
         }
 
     }, 1000);
