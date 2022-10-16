@@ -2,10 +2,16 @@ import { elements } from './baseLogin.js';
 
 function animateIcon(input) {
 
+    const icon = elements[input + 'Icon'];
+    
     elements[input].addEventListener('keyup', function() {
 
         if(this.value.length >= 1) {
-            elements[input + 'Icon'].classList.add('slide-left');
+            icon.classList.remove('slide-right');
+            icon.classList.add('slide-left');
+        } else {
+            icon.classList.remove('slide-left');
+            icon.classList.add('slide-right');
         }
     });
 }

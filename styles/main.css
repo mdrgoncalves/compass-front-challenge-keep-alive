@@ -431,6 +431,11 @@ body {
   animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
+.slide-right {
+  -webkit-animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
 @-webkit-keyframes slide-left {
   0% {
     transform: translateX(0);
@@ -446,6 +451,22 @@ body {
   }
   100% {
     transform: translateX(-60px);
+  }
+}
+@-webkit-keyframes slide-right {
+  0% {
+    transform: translateX(-60px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slide-right {
+  0% {
+    transform: translateX(-60px);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 .error {

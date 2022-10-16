@@ -1,6 +1,13 @@
+// Icons Animations
+
 .slide-left {
     -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.slide-right {
+    -webkit-animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 @keyframes slide-left {
@@ -13,6 +20,19 @@
         transform: translateX(-60px);
     }
 }
+
+@keyframes slide-right {
+    0% {
+        -webkit-transform: translateX(-60px);
+        transform: translateX(-60px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+// Error Message
 
 .error {
     border: 1px solid $color-error !important;
