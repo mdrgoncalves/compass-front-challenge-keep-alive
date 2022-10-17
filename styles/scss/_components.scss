@@ -427,4 +427,13 @@
             margin: 1.5rem 0;
         }
     }
+
+    @media screen and (max-width: 280px) {
+        padding: 1rem;
+
+        &__button--continue,
+        &__button--logout {
+            font-size: 1.5rem;
+        }
+    }
 }

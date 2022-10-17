@@ -3,6 +3,11 @@ html {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+@media screen and (max-width: 280px) {
+  html {
+    font-size: 9px;
+  }
+}
 
 *, *:before, *:after {
   box-sizing: inherit;
@@ -429,6 +434,14 @@ body {
   .footer__buttons {
     height: 12vh;
     margin: 1.5rem 0;
+  }
+}
+@media screen and (max-width: 280px) {
+  .footer {
+    padding: 1rem;
+  }
+  .footer__button--continue, .footer__button--logout {
+    font-size: 1.5rem;
   }
 }
 
