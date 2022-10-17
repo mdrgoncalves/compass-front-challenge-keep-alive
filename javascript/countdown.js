@@ -10,7 +10,7 @@ function countdown() {
         startTimer--;
         elements.counter.textContent = startTimer;
 
-        if(startTimer <= 0) {
+        if(startTimer === 0) {
             if(confirm('Deseja continuar logado?')) {
                 location.reload();
             } else {
