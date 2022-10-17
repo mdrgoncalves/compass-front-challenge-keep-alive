@@ -106,7 +106,7 @@ body {
 }
 @media screen and (max-width: 1770px) {
   .login .authentication .authentication__password .password__input, .login .authentication__password .authentication .password__input, .login .authentication .authentication__username .username__input, .login .authentication__username .authentication .username__input {
-    width: 80%;
+    width: 100%;
   }
 }
 .login .authentication__username {
@@ -114,6 +114,9 @@ body {
 }
 .login .authentication__password {
   margin-bottom: 10.65vh;
+}
+.login .authentication__password .password__input {
+  height: 60px;
 }
 .login .authentication__error {
   color: #E9B425;
@@ -150,6 +153,9 @@ body {
   }
   .login .authentication__username .username__input, .login .authentication__password .password__input {
     width: 100%;
+  }
+  .login__password .password__input {
+    height: auto;
   }
   .login .authentication {
     width: 80%;
@@ -301,7 +307,7 @@ body {
 }
 @media screen and (max-width: 1815px) {
   .missions__text {
-    font-size: 2.8rem;
+    font-size: 4.15vh;
   }
 }
 @media screen and (max-width: 1085px) {
