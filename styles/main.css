@@ -175,6 +175,11 @@ body {
     margin-bottom: 0.8rem;
   }
 }
+@media screen and (max-width: 320px) {
+  .login .username__input {
+    font-size: 0.6rem;
+  }
+}
 
 .login-image {
   height: 100vh;
@@ -407,14 +412,13 @@ body {
     flex-direction: column;
     justify-content: center;
     height: auto;
-    padding: 0 1.5rem;
   }
   .footer__text {
     font-size: 1rem;
     text-align: justify;
     width: 100%;
     margin: 0;
-    padding: 1.5rem 0;
+    padding: 1.5rem;
     border-right: none;
   }
   .footer .counter {
@@ -432,8 +436,12 @@ body {
     font-size: 1rem;
   }
   .footer__buttons {
+    margin-top: 1.5rem;
     height: 12vh;
-    margin: 1.5rem 0;
+    width: 100%;
+  }
+  .footer__button--continue, .footer__button--logout {
+    flex-grow: 1;
   }
 }
 @media screen and (max-width: 280px) {
